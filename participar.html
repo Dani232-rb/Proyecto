@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Participación - Reciclaje de Metales</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: black;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reciclaje de Metales</h1>
+        <h1>Contribuyendo a un futuro sostenible</h1>
+    </header>
+    <nav>
+        <a href="Info.HTML">Información</a>
+        <a href="Asociacione.html">Asociaciones</a>
+        <a href="participar.html">Formulario de Participación</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Formulario de Participación en el Reciclaje de Metales</h1>
+        <p>¿Quieres contribuir al reciclaje de metales? Completa este formulario para unirte a campañas, voluntariados o recibir información. Tus datos serán tratados de forma confidencial.</p>
+        
+        <form action="mailto:kurgesaght@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono (opcional):</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+            
+            <label for="participacion">¿Cómo deseas participar?</label>
+            <select id="participacion" name="participacion" required>
+                <option value="">Selecciona una opción</option>
+                <option value="voluntariado">Voluntariado en recolección</option>
+                <option value="educacion">Campañas de educación</option>
+                <option value="donacion">Donación de metales</option>
+                <option value="informacion">Recibir información</option>
+                <option value="otro">Otro</option>
+            </select>
+            
+            <label for="mensaje">Mensaje adicional (opcional):</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            
+            <button type="submit">Enviar Participación</button>
+        </form>
+        
+        <p>Al enviar, aceptas que usemos tu información para contactarte sobre iniciativas de reciclaje.</p>
+    </div>
+    
+    <footer>
+    </footer>
+</body>
+</html>
